@@ -88,6 +88,7 @@ while True:
     pose = 4
 
 
+
     if len(lmList) != 0 :
         per, maxM = estimation(img, lmList, maxM, pose)
         alt_yarim=0
