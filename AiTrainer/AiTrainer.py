@@ -9,6 +9,7 @@ cap = cv2.VideoCapture("bicepscurl.mp4") # videoyla beraber 88. satırdaki pose 
 
 detector = pm.poseDetector()
 count = 0
+count_temp=0.0
 dir = 0
 maxM = 0
 
@@ -45,6 +46,7 @@ poses=[
 
 
 
+
 def estimation(img,lmList,maxM,pose):
     #print('Pose Estimation')
     #print(poses[pose][1][0])
@@ -67,9 +69,9 @@ def estimation(img,lmList,maxM,pose):
 
 
 
-    if poses[pose][2] != []:
+    if poses[pose][2] != []: # eğim değerlerinin kontrolü. istediğimiz eğim değerleri arasında değilse saymaz
         if maxM < poses[pose][2][0] or maxM > poses[pose][2][1]: # eğer istenilen değerler içerisinde değilse saymaması için per = 0 yapıyoruz
-            #print("sayılmadı///////////////////////////////////////////////////////////////////")
+            print("sayılmadı///////////////////////////////////////////////////////////////////")
             per = 0
             maxM = 0
 
@@ -86,6 +88,7 @@ while True:
     img = detector.findPose(img)
     lmList = detector.findPosition(img, draw=False)
     pose = 4
+
 
 
 
@@ -117,17 +120,29 @@ while True:
         cv2.putText(img, f'{maxM:.1f}', (150, 100), cv2.FONT_HERSHEY_PLAIN, 2, (255, 0, 0), 2)
         cv2.putText(img, f'{int(per)}', (180, 150), cv2.FONT_HERSHEY_PLAIN, 2, (0, 255, 255), 2)
 
+        if count_temp != count: # eğer hareket tamsa yarım değerleri sıfırlıyor
+            ust_yarim_sayac = 0
+            alt_yarim_sayac = 0
+
 
     if alt_yarim_temp!=alt_yarim:
         alt_yarim_sayac+=0.5
-        #print("yarim yaptı",f'{int(alt_yarim_sayac)}')
+
         alt_yarim_temp=alt_yarim
 
     if ust_yarim_temp != ust_yarim:
         ust_yarim_sayac += 0.5
-        #print("yarim yaptı", f'{int(ust_yarim_sayac)}')
+
         ust_yarim_temp = ust_yarim
 
+    print(count_temp)
+
+
+
+    print("ALT yarim yaptı",f'{int(alt_yarim_sayac)}')
+    print("------------------ÜST yarim yaptı", f'{int(ust_yarim_sayac)}')
+
+    count_temp=count
     #cTime = time.time()
     #fps = 1 / (cTime - pTime)
     #pTime = cTime
@@ -136,6 +151,8 @@ while True:
     #print("alt yarım", alt_yarim_sayac, int(alt_yarim_sayac))
     #print("üst yarım", ust_yarim_sayac)
     #print("yarım yapılan hareket sayısı: ", int(alt_yarim_sayac) + int(ust_yarim_sayac) - int(count)*2 )
+
+
 
 
     cv2.imshow("Image", img)
