@@ -1,11 +1,10 @@
 import cv2
 import numpy
-import numpy as np
 import PoseEstimationMin as pm
 import math
 
 cap = cv2.VideoCapture(0)
-#cap = cv2.VideoCapture("bicepscurl.mp4") # videoyla beraber 88. satırdaki pose değeri de poses listesindeki hareket seçilip seğiştirilmeli
+#cap = cv2.VideoCapture("Leg Extension.mp4") # videoyla beraber 88. satırdaki pose değeri de poses listesindeki hareket seçilip seğiştirilmeli
 
 
 detector = pm.poseDetector()
@@ -24,17 +23,20 @@ ust_yarim_sayac=0
 
 
 #[[açısı ölçülecek noktalar], [ölçülecek açı aralığı], [eğer kontrol edilcekse eğim aralığı], [eğimi ölçülecek noktalar]]
+
+
+
 poses=[
     [[11, 13, 15], [30, 165], []        , []],        # pullup
     [[12, 14, 16], [85, 155], [0.0, 0.3], [14,16]],   # dips #
-    [[12, 14, 16], [60, 150], [0.7, 0.9], [12,24]],   # triceps pushdown
+    [[12, 14, 16], [60, 150], [0.6, 0.9], [12,24]],   # triceps pushdown
     [[11, 13, 15], [60, 170], [6  ,  13], [23,11]],   # bench press
     [[15, 13, 11], [50, 150], []        , []],        # biceps curl
-    [[11, 13, 15], [90, 155], [0.05,0.2], [13,15]],   # dumbell shoulder press
+    [[11, 13, 15], [90, 155], [0.0,0.4], [13,15]],   # dumbell shoulder press
     [[13, 11, 23], [40, 90 ], []        , []],        # dumbell lateral raise
     [[23, 25, 27], [70, 150], []        , []],        # leg extension
     [[23, 25, 27], [90, 160], []        , []],        # seated leg curl
-    [[24, 26, 28], [170,270], []        , []],        # leg press
+    [[24, 26, 28], [190,270], []        , []],        # leg press
     [[12, 14, 16], [50, 180], [3, 10]   , [14,12]],   # dumbbell kickback
 ]
 
@@ -44,7 +46,7 @@ poses=[
 
 def estimation(img,pose):
     angle = detector.findAngle(img, poses[pose][0][:]) # istediğimiz 3 nokta arasındaki açıyı aldık
-    per = np.interp(angle, (poses[pose][1][0], poses[pose][1][1]), (0, 100)) # yukarıda listede geçerli açı aralığını yüzdelik dilime çevirdik
+    per = numpy.interp(angle, (poses[pose][1][0], poses[pose][1][1]), (0, 100)) # yukarıda listede geçerli açı aralığını yüzdelik dilime çevirdik
 
     per=egim_hesapla(pose,per)
 
@@ -77,7 +79,7 @@ while True:
     success, img = cap.read() # görüntüyü yakalama işlemi
     img = detector.findPose(img) # eklemler arasındaki çizgileri çizen metod
     lmList = detector.findPosition(img, draw=False) # eklemleri nokta ile işaretleyen ve eklemlerin id ve kooordinatlarını dönen metod
-    pose = 4 # yukarıdaki listeden hangi hareket hareketi yapacaksak onu seçiyoruz
+    pose = 7 # yukarıdaki listeden hangi hareket hareketi yapacaksak onu seçiyoruz
 
 
     if len(lmList) != 0 : # eklem noktalari tespit edildi mi
@@ -130,8 +132,6 @@ while True:
         toplam_hareket = count + yarim_hareket
         dogru_hareket_orani = (count/toplam_hareket)*100
         print('Toplam yapılan tekrar sayısı: ',toplam_hareket,'\nDoğru yapılan tekrar sayısı: ',count,'\nYarım yapılan tekrar sayısı: ',yarim_hareket)
-        print('Doğru yapılan hareket yüzdesi: ',dogru_hareket_orani)
-        print(dogru_hareket_orani)
+        print('Doğru yapılan hareket yüzdesi: ',f'{dogru_hareket_orani:.1f}')
         break
-
 cv2.destroyAllWindows()
