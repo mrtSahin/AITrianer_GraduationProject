@@ -4,3 +4,4 @@ Requirements <br/>
   <li>numpy<br/></li>
   <li>mediapipe<br/></li>
 </ol>
+[GERÇEK ZAMANLI GÖRÜNTÜ İŞLEME DESTEKLİ FİTNESS HAREKET FORM ANALİZİ.docx](https://github.com/user-attachments/files/16569255/GERCEK.ZAMANLI.GORUNTU.ISLEME.DESTEKLI.FITNESS.HAREKET.FORM.ANALIZI.docx)
