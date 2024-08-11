@@ -7,7 +7,6 @@ Requirements <br/>
 
 <br/>
 
-<h2> <strong>Rapor Dosyası</strong> </h2>
-<embed src="https://github.com/user-attachments/files/16569255/GERCEK.ZAMANLI.GORUNTU.ISLEME.DESTEKLI.FITNESS.HAREKET.FORM.ANALIZI.docx" type="application/pdf" height="300px" width="100%">
+<h2> <strong>Rapor Dosyası Bağlantı</strong> </h2>
 
-
+[GERCEK.ZAMANLI.GORUNTU.ISLEME.DESTEKLI.FITNESS.HAREKET.FORM.ANALIZI.docx](https://github.com/user-attachments/files/16573650/GERCEK.ZAMANLI.GORUNTU.ISLEME.DESTEKLI.FITNESS.HAREKET.FORM.ANALIZI.docx)
