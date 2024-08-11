@@ -14,5 +14,5 @@ Requirements <br/>
 <br/>
 <img src="https://github.com/user-attachments/assets/a5fc965d-bd1d-4842-aa1a-f668078fa2d0">
 
-<iframe style="width: 500px; height: 800px;" src="https://github.com/user-attachments/files/16569255/GERCEK.ZAMANLI.GORUNTU.ISLEME.DESTEKLI.FITNESS.HAREKET.FORM.ANALIZI.docx&embedded=true" height="240" width="320" frameborder="0"></iframe>
+<iframe style="width: 500px; height: 800px;" src="https://github.com/user-attachments/files/16569255/GERCEK.ZAMANLI.GORUNTU.ISLEME.DESTEKLI.FITNESS.HAREKET.FORM.ANALIZI.docx" height="240" width="320" frameborder="0"/>
 ![image](https://github.com/user-attachments/assets/80e4c382-e30a-4429-bf65-49775b72e4af)
