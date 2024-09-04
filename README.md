@@ -1,11 +1,26 @@
-Requirements <br/>
+![image](https://github.com/user-attachments/assets/79dd613d-6be9-401b-ae03-008731f9c494)Requirements <br/>
 <ol>
   <li>opencv-python<br/></li>
   <li>numpy<br/></li>
   <li>mediapipe<br/></li>
 </ol>
 
+<br/><br/><br/>
+Doğru hareket sayma
 <br/>
+![image](https://github.com/user-attachments/assets/5446c257-05fb-4aa3-8a7b-8fc624fe126a)
+<br/>
+Yanlış hareket sayma
+<br/>
+![image](https://github.com/user-attachments/assets/89433143-4c18-4a1e-a6b4-35aba58de8d2)
+<br/>
+Yarım hareket sayma
+<br/>
+![image](https://github.com/user-attachments/assets/55993654-8aca-4dd1-96e1-66b5636b66b2)
+<br/>
+Gerekli eğim açısı sağlanmaması durumu
+<br/>
+![image](https://github.com/user-attachments/assets/9cc16774-4079-42c6-9ae2-d043a5788f72)
 
 <h2> <strong>Rapor Dosyası Bağlantı</strong> </h2>
 
