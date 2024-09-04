@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/79dd613d-6be9-401b-ae03-008731f9c494)Requirements <br/>
+Requirements <br/>
 <ol>
   <li>opencv-python<br/></li>
   <li>numpy<br/></li>
