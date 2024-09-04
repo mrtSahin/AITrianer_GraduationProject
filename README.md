@@ -7,7 +7,8 @@ Requirements <br/>
 
 <h2> <strong>Rapor Dosyası Bağlantı</strong> </h2>
 
-[GERCEK.ZAMANLI.GORUNTU.ISLEME.DESTEKLI.FITNESS.HAREKET.FORM.ANALIZI.docx](https://github.com/user-attachments/files/16573650/GERCEK.ZAMANLI.GORUNTU.ISLEME.DESTEKLI.FITNESS.HAREKET.FORM.ANALIZI.docx)
+[GERCEK.ZAMANLI.GORUNTU.ISLEME.DESTEKLI.FITNESS.HAREKET.FORM.ANALIZI.pdf](https://github.com/user-attachments/files/16870702/GERCEK.ZAMANLI.GORUNTU.ISLEME.DESTEKLI.FITNESS.HAREKET.FORM.ANALIZI.pdf)
+
 
 <br/><br/><br/>
 <h2> <strong>Doğru hareket sayma<strong></h2>
