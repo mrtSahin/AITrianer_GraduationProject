@@ -5,6 +5,10 @@ Requirements <br/>
   <li>mediapipe<br/></li>
 </ol>
 
+<h2> <strong>Rapor Dosyası Bağlantı</strong> </h2>
+
+[GERCEK.ZAMANLI.GORUNTU.ISLEME.DESTEKLI.FITNESS.HAREKET.FORM.ANALIZI.docx](https://github.com/user-attachments/files/16573650/GERCEK.ZAMANLI.GORUNTU.ISLEME.DESTEKLI.FITNESS.HAREKET.FORM.ANALIZI.docx)
+
 <br/><br/><br/>
 <h2> <strong>Doğru hareket sayma<strong></h2>
 <br/>
@@ -29,6 +33,4 @@ Requirements <br/>
   
 ![image](https://github.com/user-attachments/assets/9cc16774-4079-42c6-9ae2-d043a5788f72)
 
-<h2> <strong>Rapor Dosyası Bağlantı</strong> </h2>
 
-[GERCEK.ZAMANLI.GORUNTU.ISLEME.DESTEKLI.FITNESS.HAREKET.FORM.ANALIZI.docx](https://github.com/user-attachments/files/16573650/GERCEK.ZAMANLI.GORUNTU.ISLEME.DESTEKLI.FITNESS.HAREKET.FORM.ANALIZI.docx)
