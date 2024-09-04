@@ -25,3 +25,4 @@ Requirements <br/>
 <h2> <strong>Rapor Dosyası Bağlantı</strong> </h2>
 
 [GERCEK.ZAMANLI.GORUNTU.ISLEME.DESTEKLI.FITNESS.HAREKET.FORM.ANALIZI.docx](https://github.com/user-attachments/files/16573650/GERCEK.ZAMANLI.GORUNTU.ISLEME.DESTEKLI.FITNESS.HAREKET.FORM.ANALIZI.docx)
+![image](https://github.com/user-attachments/assets/5446c257-05fb-4aa3-8a7b-8fc624fe126a)
